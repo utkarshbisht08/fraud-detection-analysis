@@ -24,6 +24,20 @@ Screen mirroring indicators: Transactions where an installed screen-sharing appl
 * **Transaction initiation:** Link-based transactions showed a **100% fraud rate**, compared with approximately **15% for in-app transactions**.
 * **Transaction amount:** Transactions above ₹10,000 showed a fraud rate close to **100%**, compared with approximately **13% below this threshold**.
 
+# Visualization
+
+![Fraud by verification status](images/Fraud%20by%20Handle%20Verification%20Status.png)
+*Unverified accounts showed a fraud rate near 100%, compared to almost 0% for verified accounts — one of the strongest single predictors in the dataset.*
+
+![Fraud by PIN entry method](images/Fraud%20By%20Pins.png)
+*Transactions where the PIN was pasted (rather than typed manually) had a dramatically higher fraud rate, pointing to automated or credential-stuffing attacks.*
+
+![Fraud by session source](images/Fraud%20Rate%20By%20Session%20Source.png)
+*Transactions initiated via a link had a far higher fraud rate than those started inside the app itself.*
+
+![Fraud by authorization method](images/Fraud%20By%20Authorization%20Method.png)
+*OTP-authorized transactions showed a notably higher fraud rate than PIN-authorized ones.*
+
 # Business Recommendation
 
 The analysis suggests that certain transaction characteristics could be useful as **risk indicators for additional verification**, particularly:
